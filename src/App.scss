@@ -1,0 +1,106 @@
+nav {
+  width: 100vw;
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 3vw;
+  background-color: #c4c4c4;
+  font-size: 1.5rem;
+  img {
+    height: 100%;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    gap: 1rem;
+    .active {
+      text-decoration: underline;
+      font-weight: 800;
+    }
+  }
+}
+.breadcrumb {
+  margin: 1rem 5%;
+  cursor: pointer;
+}
+.header,
+hr {
+  width: 90%;
+  margin: 1rem 5%;
+}
+.header {
+  background-color: #c4c4c4;
+  height: 7vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.museum-list {
+  display: flex;
+  gap: 1rem;
+
+  .card {
+    width: 266px;
+    padding: 0.5rem;
+    background-color: #c4c4c4;
+    border: 1px solid black;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+    text-align: center;
+  }
+}
+
+.museum-detail-list,
+.museum-list {
+  width: 100vw;
+  padding: 5vh 10%;
+}
+.museum-detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  width: 100%;
+  .museum-detai-list-item {
+    display: flex;
+    width: 100%;
+
+    gap: 3rem;
+    .image {
+      padding: 2rem;
+      background: #c4c4c4;
+      border: 1px solid black;
+      min-height: 266px;
+      width: 266px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+      img {
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+    .content {
+      background-color: #c4c4c4;
+      border: 1px solid black;
+      width: 70%;
+      font-size: 1.5rem;
+      padding: 2rem;
+      font-weight: 100;
+    }
+  }
+}
