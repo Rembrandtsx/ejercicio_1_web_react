@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Museum from "../MuseumDetail/Museum";
+import MuseumCard from "./MuseumCard";
 function MuseumsList() {
   const [museums, setMuseums] = useState([]);
   const [curMuseum, setCurMuseum] = useState();
@@ -40,18 +41,11 @@ function MuseumsList() {
       {curMuseum === undefined ? (
         <div className="museum-list">
           {museums.map((museo) => (
-            <div
-              className="card"
+            <MuseumCard
+              museum={museo}
+              elegirMuseo={elegirMuseo}
               key={museo.id}
-              onClick={() => {
-                elegirMuseo(museo.id);
-                console.log(curMuseum);
-              }}
-            >
-              <img src={museo.image} alt={museo.description} />
-              <h3>{museo.name}</h3>
-              <h6>{museo.city}</h6>
-            </div>
+            ></MuseumCard>
           ))}
         </div>
       ) : (
