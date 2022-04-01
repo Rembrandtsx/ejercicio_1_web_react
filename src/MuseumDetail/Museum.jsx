@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Obra from "./Obra";
 
 function Museum({ museum }) {
-  const [museo, setMuseo] = useState(museum);
+  const [museo] = useState(museum);
 
   return (
     <div className="museum-detail-list">
